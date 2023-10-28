@@ -28,9 +28,9 @@ delay: \(String(format: "%.02f", delay))
             name: DataStore.shared.animations.randomElement()?.rawValue ?? "slideLeft",
             curve: DataStore.shared.animations.randomElement()?
                 .rawValue ?? "easeIn",
-            force: Double.random(in: 1...1.5),
-            duration: Double.random(in: 0.8...1.6),
-            delay: 2
+            force: Double.random(in: 0.8...1.2),
+            duration: Double.random(in: 0.8...1.4),
+            delay: 0.3
             
         )
     }

@@ -16,6 +16,8 @@
 		6405554D2AEA832100B02384 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 6405554C2AEA832100B02384 /* SpringAnimation */; };
 		648995952AEAF58100175DF6 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648995942AEAF58100175DF6 /* Animation.swift */; };
 		648995972AEAF5A900175DF6 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648995962AEAF5A900175DF6 /* DataStore.swift */; };
+		649E36B22AED5468004CD4A3 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 649E36B12AED5468004CD4A3 /* SpringAnimation */; };
+		649E36B62AED5758004CD4A3 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 649E36B52AED5758004CD4A3 /* SpringAnimation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				649E36B62AED5758004CD4A3 /* SpringAnimation in Frameworks */,
+				649E36B22AED5468004CD4A3 /* SpringAnimation in Frameworks */,
 				6405554D2AEA832100B02384 /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +145,8 @@
 			name = SpringApp;
 			packageProductDependencies = (
 				6405554C2AEA832100B02384 /* SpringAnimation */,
+				649E36B12AED5468004CD4A3 /* SpringAnimation */,
+				649E36B52AED5758004CD4A3 /* SpringAnimation */,
 			);
 			productName = SpringApp;
 			productReference = 640555342AEA7FDA00B02384 /* SpringApp.app */;
@@ -447,6 +453,16 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		6405554C2AEA832100B02384 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6405554B2AEA832100B02384 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+		649E36B12AED5468004CD4A3 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6405554B2AEA832100B02384 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+		649E36B52AED5758004CD4A3 /* SpringAnimation */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6405554B2AEA832100B02384 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
 			productName = SpringAnimation;

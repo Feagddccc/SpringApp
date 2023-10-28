@@ -15,18 +15,77 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE9-K0-ko1">
+                                <rect key="frame" x="40" y="487" width="240" height="41"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hE9-K0-ko1" secondAttribute="height" multiplier="240:41" id="n2A-JY-FVl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Run">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" systemColor="systemGrayColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rfP-AI-uIh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7j-F2-Q6Z" customClass="SpringView" customModule="SpringAnimation">
+                                <rect key="frame" x="40" y="60" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation parameters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKa-Yo-jMi" customClass="SpringLabel" customModule="SpringAnimation">
+                                        <rect key="frame" x="0.0" y="8" width="240" height="112"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" systemColor="systemGrayColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstItem="NKa-Yo-jMi" firstAttribute="top" secondItem="B7j-F2-Q6Z" secondAttribute="topMargin" id="9Do-J4-zPS"/>
+                                    <constraint firstItem="NKa-Yo-jMi" firstAttribute="leading" secondItem="B7j-F2-Q6Z" secondAttribute="leading" id="GBJ-Jl-tou"/>
+                                    <constraint firstItem="NKa-Yo-jMi" firstAttribute="bottom" secondItem="B7j-F2-Q6Z" secondAttribute="bottomMargin" id="l3Y-XY-ApH"/>
+                                    <constraint firstItem="NKa-Yo-jMi" firstAttribute="centerX" secondItem="B7j-F2-Q6Z" secondAttribute="centerX" id="nR5-iB-bft"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hE9-K0-ko1" firstAttribute="width" secondItem="B7j-F2-Q6Z" secondAttribute="width" id="0rb-pq-g13"/>
+                            <constraint firstItem="B7j-F2-Q6Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="1Wu-CS-AfL"/>
+                            <constraint firstItem="B7j-F2-Q6Z" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.225352" id="4Y2-Be-Kde"/>
+                            <constraint firstItem="B7j-F2-Q6Z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="MyV-z5-QLj"/>
+                            <constraint firstItem="hE9-K0-ko1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="a2j-ix-Dxr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hE9-K0-ko1" secondAttribute="bottom" constant="40" id="b9G-7v-osr"/>
+                            <constraint firstItem="hE9-K0-ko1" firstAttribute="height" secondItem="B7j-F2-Q6Z" secondAttribute="height" multiplier="0.320312" id="pkZ-zF-eQV"/>
+                            <constraint firstItem="B7j-F2-Q6Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rIU-1e-vDL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationLabel" destination="NKa-Yo-jMi" id="CKy-Ra-qCk"/>
+                        <outlet property="animationView" destination="B7j-F2-Q6Z" id="oKg-Z3-v1z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="-2"/>
+            <point key="canvasLocation" x="129.375" y="-2.112676056338028"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
