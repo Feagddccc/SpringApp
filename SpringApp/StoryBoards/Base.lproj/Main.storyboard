@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE9-K0-ko1">
-                                <rect key="frame" x="40" y="487" width="240" height="41"/>
+                                <rect key="frame" x="38" y="487.5" width="244" height="40.5"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="hE9-K0-ko1" secondAttribute="height" multiplier="240:41" id="n2A-JY-FVl"/>
+                                    <constraint firstAttribute="width" secondItem="hE9-K0-ko1" secondAttribute="height" multiplier="235:39" id="i7H-Q8-Z87"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Run">
@@ -28,45 +28,43 @@
                                     <color key="baseForegroundColor" systemColor="systemGrayColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rfP-AI-uIh"/>
+                                    <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89N-YD-lsi"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7j-F2-Q6Z" customClass="SpringView" customModule="SpringAnimation">
-                                <rect key="frame" x="40" y="60" width="240" height="128"/>
+                                <rect key="frame" x="35.5" y="60" width="249" height="140"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation parameters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKa-Yo-jMi" customClass="SpringLabel" customModule="SpringAnimation">
-                                        <rect key="frame" x="0.0" y="8" width="240" height="112"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation parameters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXI-xd-lX5" customClass="SpringLabel" customModule="SpringAnimation">
+                                        <rect key="frame" x="8" y="14" width="233" height="118"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" systemColor="systemGrayColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
-                                    <constraint firstItem="NKa-Yo-jMi" firstAttribute="top" secondItem="B7j-F2-Q6Z" secondAttribute="topMargin" id="9Do-J4-zPS"/>
-                                    <constraint firstItem="NKa-Yo-jMi" firstAttribute="leading" secondItem="B7j-F2-Q6Z" secondAttribute="leading" id="GBJ-Jl-tou"/>
-                                    <constraint firstItem="NKa-Yo-jMi" firstAttribute="bottom" secondItem="B7j-F2-Q6Z" secondAttribute="bottomMargin" id="l3Y-XY-ApH"/>
-                                    <constraint firstItem="NKa-Yo-jMi" firstAttribute="centerX" secondItem="B7j-F2-Q6Z" secondAttribute="centerX" id="nR5-iB-bft"/>
+                                    <constraint firstItem="vXI-xd-lX5" firstAttribute="bottom" secondItem="B7j-F2-Q6Z" secondAttribute="bottomMargin" id="4fH-zN-czo"/>
+                                    <constraint firstItem="vXI-xd-lX5" firstAttribute="top" secondItem="B7j-F2-Q6Z" secondAttribute="top" constant="14" id="Fck-F8-xeA"/>
+                                    <constraint firstItem="vXI-xd-lX5" firstAttribute="leading" secondItem="B7j-F2-Q6Z" secondAttribute="leadingMargin" id="Y7B-BH-OKj"/>
+                                    <constraint firstItem="vXI-xd-lX5" firstAttribute="trailing" secondItem="B7j-F2-Q6Z" secondAttribute="trailingMargin" id="lun-tw-uzj"/>
+                                    <constraint firstAttribute="width" secondItem="B7j-F2-Q6Z" secondAttribute="height" multiplier="249:140" id="qRU-X7-8fr"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hE9-K0-ko1" firstAttribute="width" secondItem="B7j-F2-Q6Z" secondAttribute="width" id="0rb-pq-g13"/>
-                            <constraint firstItem="B7j-F2-Q6Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="1Wu-CS-AfL"/>
-                            <constraint firstItem="B7j-F2-Q6Z" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.225352" id="4Y2-Be-Kde"/>
-                            <constraint firstItem="B7j-F2-Q6Z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="MyV-z5-QLj"/>
-                            <constraint firstItem="hE9-K0-ko1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="a2j-ix-Dxr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hE9-K0-ko1" secondAttribute="bottom" constant="40" id="b9G-7v-osr"/>
-                            <constraint firstItem="hE9-K0-ko1" firstAttribute="height" secondItem="B7j-F2-Q6Z" secondAttribute="height" multiplier="0.320312" id="pkZ-zF-eQV"/>
-                            <constraint firstItem="B7j-F2-Q6Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rIU-1e-vDL"/>
+                            <constraint firstItem="B7j-F2-Q6Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="L8F-Ug-nCG"/>
+                            <constraint firstItem="B7j-F2-Q6Z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.778125" id="OPZ-Jl-r1r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hE9-K0-ko1" secondAttribute="bottom" constant="40" id="YO2-Xi-WrK"/>
+                            <constraint firstItem="hE9-K0-ko1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gZT-zA-Ad0"/>
+                            <constraint firstItem="hE9-K0-ko1" firstAttribute="width" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.734375" id="keP-O0-TTP"/>
+                            <constraint firstItem="B7j-F2-Q6Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uKJ-mT-mvj"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="animationLabel" destination="NKa-Yo-jMi" id="CKy-Ra-qCk"/>
-                        <outlet property="animationView" destination="B7j-F2-Q6Z" id="oKg-Z3-v1z"/>
+                        <outlet property="animationLabel" destination="vXI-xd-lX5" id="Pgm-rA-amj"/>
+                        <outlet property="animationView" destination="B7j-F2-Q6Z" id="bbE-VU-dw5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
